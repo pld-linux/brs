@@ -20,8 +20,8 @@ on the command line or from standard input. A built-in Concordance
 The Bible Retrieval System zawiera bazê danych autoryzowanej ("King
 James") wersji Starego i Nowego Testamentu. Jest to zestaw bibliotek
 do znajdowania i otrzymywania tekstu oraz program ("bible"), który
-u¿ywa tych bibliotek do otrzymywania wersetów biblii w lini komend lub
-ze standard input. Wbudowane Concordance (urz±dzenie do szukania) jest
+u¿ywa tych bibliotek do otrzymywania wersetów biblii w linii komend lub
+ze standardowego wej¶cia. Wbudowane Concordance (urz±dzenie do szukania) jest
 tak¿e wspierane. Dostêpna jest strona man.
 
 %prep
