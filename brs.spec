@@ -5,8 +5,6 @@ Version:	4.00.l1
 Release:	1
 License:	GPL
 Group:		Applications
-Group(de):	Applikationen
-Group(pl):	Aplikacje
 Source0:	ftp://SunSITE.unc.edu/pub/Linux/apps/religion/%{name}.%{version}.tar.gz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
