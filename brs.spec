@@ -4,6 +4,7 @@ Version:	4.00.l1
 Release:	1
 License:	GPL
 Group:		Applications
+Group(de):	Applikationen
 Group(pl):	Aplikacje
 Source0:	ftp://SunSITE.unc.edu/pub/Linux/apps/religion/%{name}.%{version}.tar.gz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -21,16 +22,15 @@ rm -rf $RPM_BUILD_ROOT
 %setup -q -n bible
 
 %build
-%{__make} CFLAGS="$RPM_OPT_FLAGS -fwritable-strings -DDESTLIB=\\\"%{_datadir}/%{name}\\\""
+%{__make} CFLAGS="%{rpmcflags} -fwritable-strings -DDESTLIB=\\\"%{_datadir}/%{name}\\\""
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_datadir}/%{name},%{_mandir}/man1}
-install -s bible $RPM_BUILD_ROOT%{_bindir}
+install bible $RPM_BUILD_ROOT%{_bindir}
 install bible.data bible.data.conc $RPM_BUILD_ROOT%{_datadir}/%{name}
 
-gzip -9nf bible.1
-install bible.1.gz $RPM_BUILD_ROOT%{_mandir}/man1
+install bible.1 $RPM_BUILD_ROOT%{_mandir}/man1
 gzip -9nf README*
 
 %clean
