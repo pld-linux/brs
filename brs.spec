@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications
 Source0:	ftp://SunSITE.unc.edu/pub/Linux/apps/religion/%{name}.%{version}.tar.gz
+# Source0-md5:	260b789e0ff401293ef05809fc42581b
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
