@@ -1,4 +1,5 @@
 Summary:	Bible Retrieval System
+Summary(pl):	System Dystrybucji Biblii
 Name:		brs
 Version:	4.00.l1
 Release:	1
@@ -16,6 +17,14 @@ of libraries for finding and retrieving text, and a program ("bible")
 which uses the libraries to retrieve Bible passages given references
 on the command line or from standard input. A built-in Concordance
 (word search facility) is also supported. A man page is provided.
+
+%description -l pl
+The Bible Retrieval System zawiera bazê danych autoryzowanej ("King
+James") wersji Starego i Nowego Testamentu. Jest to zestaw bibliotek
+do znajdowania i otrzymywania tekstu oraz program ("bible"), który
+u¿ywa tych bibliotek do otrzymywania wersetów biblii w lini komend lub
+ze standard input. Wbudowane Concordance (urz±dzenie do szukania) jest
+tak¿e wspierane. Dostêpna jest strona man.
 
 %prep
 rm -rf $RPM_BUILD_ROOT
