@@ -48,4 +48,4 @@ rm -rf "$RPM_BUILD_ROOT"
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/%{name}
 %{_mandir}/man1/*
-%doc README*.gz 
+%doc README*.gz
