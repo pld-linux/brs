@@ -26,11 +26,11 @@ ze standardowego wej¶cia. Wbudowane Concordance (urz±dzenie do szukania) jest
 tak¿e wspierane. Dostêpna jest strona man.
 
 %prep
-rm -rf $RPM_BUILD_ROOT
 %setup -q -n bible
 
 %build
-%{__make} CFLAGS="%{rpmcflags} -fwritable-strings -DDESTLIB=\\\"%{_datadir}/%{name}\\\""
+%{__make} \
+	CFLAGS="%{rpmcflags} -fwritable-strings -DDESTLIB=\\\"%{_datadir}/%{name}\\\""
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -45,7 +45,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc README*
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/%{name}
 %{_mandir}/man1/*
-%doc README*
