@@ -38,7 +38,6 @@ install bible $RPM_BUILD_ROOT%{_bindir}
 install bible.data bible.data.conc $RPM_BUILD_ROOT%{_datadir}/%{name}
 
 install bible.1 $RPM_BUILD_ROOT%{_mandir}/man1
-gzip -9nf README*
 
 %clean
 rm -rf "$RPM_BUILD_ROOT"
@@ -48,4 +47,4 @@ rm -rf "$RPM_BUILD_ROOT"
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/%{name}
 %{_mandir}/man1/*
-%doc README*.gz
+%doc README*
