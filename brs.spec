@@ -35,13 +35,13 @@ rm -rf $RPM_BUILD_ROOT
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_datadir}/%{name},%{_mandir}/man1}
+
 install bible $RPM_BUILD_ROOT%{_bindir}
 install bible.data bible.data.conc $RPM_BUILD_ROOT%{_datadir}/%{name}
-
 install bible.1 $RPM_BUILD_ROOT%{_mandir}/man1
 
 %clean
-rm -rf "$RPM_BUILD_ROOT"
+rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
