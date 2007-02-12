@@ -1,5 +1,5 @@
 Summary:	Bible Retrieval System
-Summary(pl.UTF-8):   System Dystrybucji Biblii
+Summary(pl.UTF-8):	System Dystrybucji Biblii
 Name:		brs
 Version:	4.00.l1
 Release:	1
